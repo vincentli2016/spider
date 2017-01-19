@@ -1,0 +1,11 @@
+This is a online scraping tool implemented by using java, which can scrape Douban book data of programming.
+I use producer & consumer pattern and multiple-threading for below codes.
+
+Here is the steps about how it works.
+1. BookQueue.java is a container which store 40 scraped books. It is a thread safe method.
+2. ConsumerThread.java is a thread class that use for gathering processed books and store these books into computer driver which is books.csv.
+3. ProducerThread.java is a thread class that scrape all related data and call BookQueue methods to save it's data.
+4. App is a main function class and also a entrance class for all other methods.
+
+
+books.csv is store on the root directory of project spider.
